@@ -1,0 +1,128 @@
+/* Sección con fondo negro */
+section.bg-black {
+    background-color: #000000;
+    /* Fondo negro */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    /* Sombra ligera */
+}
+
+/* Título en blanco */
+section h2 {
+    color: #d40808;
+    /* Texto blanco */
+    font-size: 1.5rem;
+}
+
+/* Íconos de redes sociales */
+section img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.1);
+    /* Efecto de zoom al pasar el ratón */
+    opacity: 0.8;
+    /* Opacidad reducida */
+}
+
+/* Estilo para el texto */
+section .text-center p {
+    font-size: 1rem;
+    color: #dedde6;
+    /* Texto blanco */
+    margin-bottom: 8px;
+}
+
+/* Texto secundario en gris claro */
+section .text-gray-300 {
+    color: #e1dee9;
+    /* Gris claro */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E5E7EB;
+    color: #83132b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1E3A8A;
+    color: white;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #1E3A8A, #F59E0B);
+    color: white;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.section p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
