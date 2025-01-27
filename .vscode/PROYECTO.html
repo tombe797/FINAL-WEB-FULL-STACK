@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TecnoSoluciones Industriales</title>
     <link rel="stylesheet" href="/css/styles.css">
-    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
     <!-- Tailwind CSS para estilos modernos  -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -18,7 +20,7 @@
             <h1 class="text-2xl font-bold">TecnoSoluciones Industriales</h1>
             <nav>
                 <ul class="flex space-x-4">
-                    <!-- <li><a href="/pages/index.html" class="hover:text-yellow-300">Inicio</a></li> -->
+                   
                     <li>
                         <a href="#contacto" class="hover:text-yellow-300">Contáctanos</a>
                     </li>
@@ -27,13 +29,16 @@
         </div>
     </header>
 
-<!-- Reemplazar imagen de logo por texto de encabezado -->
-<section class="text-center mb-8 bg-gradient-to-r from-blue-800 to-orange-500 p-6 rounded-lg shadow-lg">
-    <h1 class="text-4xl font-bold text-white mb-4">Soluciones tecnológicas para la industria</h1>
-    <p class="text-xl text-white">Diseños avanzados para satisfacer las necesidades industriales del presente y el futuro.</p>
-</section>
+    <section class="text-center mb-8 bg-gradient-to-r from-blue-800 to-orange-500 p-6 rounded-lg shadow-lg">
+        <div class="flex flex-col items-center md:flex-row md:justify-center md:items-center gap-6">
+            <!-- Imagen -->
+            <img src="/images/Logo tecno.png" alt="Logo industrial" class="w-96 h-48 rounded-lg shadow-lg">
 
-  
+        
+        </div>
+    </section>
+    
+
     <!-- Main content -->
     <main class="container mx-auto mt-8">
         <!-- Bienvenida -->
@@ -47,7 +52,7 @@
 
         <!-- Imagen de William -->
         <section class="text-center mb-8">
-            <img src="/Foto.jpg" alt="William" class="mx-auto w-60 h-60 rounded-full shadow-lg">
+            <img src="/images/Foto 2.jpg" alt="William" class="mx-auto w-60 h-60 rounded-lg shadow-lg">
         </section>
 
 
@@ -82,24 +87,95 @@
             </div>
         </section>
 
+        <section class="bg-gray-100 p-6 rounded-lg shadow-md mt-8">
+            <h2 class="text-2xl font-bold text-center text-red-600 mb-6">¿Qué puedes encontrar aquí?</h2>
+            <ul class="space-y-4">
+                <!-- Artículos sobre ingeniería y diseño mecánico -->
+                <li class="bg-blue-100 p-4 rounded-lg shadow-md">
+                    <div class="cursor-pointer flex items-center justify-between">
+                        <span class="text-blue-700 font-semibold" onclick="toggleContent('content1')">Artículos sobre
+                            ingeniería y diseño mecánico</span>
+                        <i class="fas fa-chevron-down text-blue-700" id="icon1"></i>
+                    </div>
+                    <div id="content1" class="hidden mt-4 text-write-900">
+                        <p>En esta sección, encontrarás artículos detallados que exploran los últimos avances en
+                            ingeniería y diseño mecánico, cubriendo desde teorías fundamentales hasta innovaciones en la
+                            industria.</p>
+                    </div>
+                </li>
 
-        <!-- ¿Qué puedes encontrar aquí? -->
-        <section class="bg-gray-50 p-6 rounded-lg shadow-md mb-8">
-            <h2 class="text-xl font-bold mb-4 text-center">¿Qué puedes encontrar aquí?</h2>
-            <ul class="list-disc list-inside text-gray-700">
-                <li>Artículos sobre ingeniería y diseño mecánico.</li>
-                <li>Recursos descargables para proyectos.</li>
-                <li>Consejos para estudiantes y principiantes.</li>
-                <li>Un espacio para compartir ideas y aprendizaje.</li>
+                <!-- Recursos descargables para proyectos -->
+                <li class="bg-green-100 p-4 rounded-lg shadow-md">
+                    <div class="cursor-pointer flex items-center justify-between">
+                        <span class="text-green-700 font-semibold" onclick="toggleContent('content2')">Recursos
+                            descargables para proyectos</span>
+                        <i class="fas fa-chevron-down text-green-700" id="icon2"></i>
+                    </div>
+                    <div id="content2" class="hidden mt-4 text-write-900">
+                        <p>Aquí puedes encontrar plantillas, guías, y software útil para tus proyectos de ingeniería.
+                            Todo el contenido está diseñado para facilitar la implementación de tus ideas de manera
+                            eficiente.</p>
+                    </div>
+                </li>
+
+                <!-- Consejos para estudiantes y principiantes -->
+                <li class="bg-yellow-100 p-4 rounded-lg shadow-md">
+                    <div class="cursor-pointer flex items-center justify-between">
+                        <span class="text-yellow-700 font-semibold" onclick="toggleContent('content3')">Consejos para
+                            estudiantes y principiantes</span>
+                        <i class="fas fa-chevron-down text-yellow-700" id="icon3"></i>
+                    </div>
+                    <div id="content3" class="hidden mt-4 text-write-900">
+                        <p>Si estás comenzando en el campo de la ingeniería, esta sección es para ti. Aquí encontrarás
+                            consejos prácticos y recursos que te ayudarán a desarrollar tus habilidades y a comprender
+                            mejor los conceptos fundamentales.</p>
+                    </div>
+                </li>
+
+                <!-- Un espacio para compartir ideas y aprendizaje -->
+                <li class="bg-purple-100 p-4 rounded-lg shadow-md">
+                    <div class="cursor-pointer flex items-center justify-between">
+                        <span class="text-purple-700 font-semibold" onclick="toggleContent('content4')">Un espacio para
+                            compartir ideas y aprendizaje</span>
+                        <i class="fas fa-chevron-down text-purple-700" id="icon4"></i>
+                    </div>
+                    <div id="content4" class="hidden mt-4 text-write-00">
+                        <p>Este es un foro abierto para todos los entusiastas de la ingeniería. Aquí puedes compartir
+                            tus ideas, preguntar dudas, o colaborar en proyectos con otros miembros de la comunidad.</p>
+                    </div>
+                </li>
             </ul>
         </section>
 
-     
-        <section class="bg-gray-100 p-6 rounded-lg shadow-md mt-8">
-            <h2 class="text-2xl font-bold text-center text-gray-800 mb-4">Necesidades en  la Industria</h2>
+        <script>
+            function toggleContent(contentId) {
+                const content = document.getElementById(contentId);
+                const icon = document.getElementById('icon' + contentId.charAt(contentId.length - 1));
 
-            <p class="text-gray-700 text-justify mb-6">
-                En el ámbito del diseño industrial, la creación de prototipos y soluciones efectivas para la industria requiere herramientas avanzadas y precisas. Software como <strong>Autodesk Inventor</strong> y <strong>SolidWorks</strong> se han convertido en pilares fundamentales, permitiendo a los ingenieros y diseñadores modelar componentes complejos, simular su funcionamiento en entornos reales y optimizar diseños para garantizar su viabilidad. Estas plataformas son esenciales para agilizar los procesos de manufactura, reducir costos y aumentar la precisión en el desarrollo de productos, cumpliendo con los estándares exigidos por la industria moderna.
+                content.classList.toggle('hidden');
+
+                if (content.classList.contains('hidden')) {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            }
+        </script>
+
+
+        <!-- Necesidades en la Industria -->
+        <section class="bg-blue-200 p-6 rounded-lg shadow-md mt-8">
+            <h2 class="text-2xl font-bold text-center text-red-600 mb-4">Necesidades en la Industria</h2>
+            <p class="text-whire-700 text-justify mb-6">
+                En el ámbito del diseño industrial, la creación de prototipos y soluciones efectivas para la industria
+                requiere herramientas avanzadas y precisas. Software como <strong>Autodesk Inventor</strong> y
+                <strong>SolidWorks</strong> se han convertido en pilares fundamentales, permitiendo a los ingenieros y
+                diseñadores modelar componentes complejos, simular su funcionamiento en entornos reales y optimizar
+                diseños para garantizar su viabilidad. Estas plataformas son esenciales para agilizar los procesos de
+                manufactura, reducir costos y aumentar la precisión en el desarrollo de productos, cumpliendo con los
+                estándares exigidos por la industria moderna.
             </p>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <img src="/images/imagen1.jpeg" alt="Descripción 1" class="w-full h-auto rounded-lg shadow-md">
@@ -110,19 +186,29 @@
                 <img src="/images/imagen7.png" alt="Descripción 5" class="w-full h-auto rounded-lg shadow-md">
             </div>
         </section>
-        
-        
 
+        <!-- Cumplimiento de Normas Internacionales y Diseño Industrial -->
 
-            <article class="bg-white p-6 rounded-lg shadow-md mb-6">
-                <header>
-                    <h2 class="text-xl font-bold mb-2">Cumplimentos de las normas internacionales</h2>
-                    <p class="text-sm text-gray-500">Publicado el <time datetime="2025-01-07">07 de enero del
-                            2025</time></p>
-                </header>
-                <p class="mt-4">Este es mi segundo post de mi página. ¡Espero sea de su agrado!</p>
-            </article>
+        <section class="bg-blue-200 p-6 rounded-lg shadow-md mt-8">
+            <h2 class="text-2xl font-bold text-center text-red-600 mb-4">Cumplimiento de Normas Internacionales y Diseño
+                Industrial</h2>
+            <p class="text-write-700 text-justify mb-6">
+                En nuestro enfoque de diseño industrial, garantizamos el cumplimiento de normas internacionales como ISO
+                9001, ISO 14001 y ASME, asegurando calidad, seguridad y sostenibilidad en cada proyecto. Esto nos
+                permite ofrecer soluciones funcionales, estéticas e innovadoras que cumplen con los más altos estándares
+                globales.
+
+                Gracias al uso de tecnologías avanzadas como CAD, simulaciones y análisis estructural, optimizamos
+                nuestros procesos desde la fase inicial, reduciendo riesgos y asegurando la excelencia. Nos enfocamos en
+                crear diseños que no solo destacan por su calidad, sino que también son competitivos en mercados
+                internacionales y promueven prácticas sostenibles.
+
+                Nuestro compromiso con estas normativas asegura que cada proyecto esté diseñado para satisfacer las
+                necesidades de nuestros clientes, desde pequeñas empresas hasta grandes industrias, siempre priorizando
+                eficiencia, innovación y respeto por el medio ambiente.
+            </p>
         </section>
+
 
         <!-- Agregar nueva publicación -->
         <section class="bg-white p-6 rounded-lg shadow-md mb-8">
@@ -157,6 +243,34 @@
 
         <!-- contatanos -->
         <section id="contacto" class="bg-black p-6 rounded-lg shadow-md mt-8">
+            <h2 class="text-xl font-bold mb-4 text-center text-white">Escribanos un email</h2>
+
+
+
+            <form action="https://formspree.io/f/xkgogdqj" method="POST" class="contact-form">
+
+               
+
+                <div class="mb-4">
+                    <label for="nombre" class="block text-sm font-semibold">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" class="w-full p-3 border border-gray-300 rounded-lg"
+                        required>
+                </div>
+                <div class="mb-4">
+                    <label for="correo" class="block text-sm font-semibold">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" class="w-full p-3 border border-gray-300 rounded-lg"
+                        required>
+                </div>
+                <div class="mb-4">
+                    <label for="mensaje" class="block text-sm font-semibold">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" class="w-full p-3 border border-gray-300 rounded-lg" rows="6"
+                        required></textarea>
+                </div>
+                <button type="submit"
+                    class="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">Enviar</button>
+            </form>
+
+
             <h2 class="text-xl font-bold mb-4 text-center text-white">Síguenos en nuestras redes sociales</h2>
 
             <div class="flex justify-center space-x-6 mb-6">
@@ -177,45 +291,11 @@
 
 
 
-            <form action="https://formspree.io/f/xkgogdqj" method="POST">
-
-                <p> Escribamos un email </p>
-                <div class="mb-4">
-                    <label for="nombre" class="block text-sm font-semibold text-red-700">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" class="w-full p-3 border border-gray-300 rounded-lg"
-                        required>
+            <footer class="bg-blue-600 text-white py-4 mt-8">
+                <div class="container mx-auto text-center">
+                    <p>&copy; 2025 Diseños Mecánicos. Todos los derechos reservados.</p>
                 </div>
-                <div class="mb-4">
-                    <label for="correo" class="block text-sm font-semibold text-red-700">Correo electrónico</label>
-                    <input type="email" id="correo" name="correo" class="w-full p-3 border border-write-300 rounded-lg"
-                        required>
-                </div>
-                <div class="mb-4">
-                    <label for="mensaje" class="block text-sm font-semibold text-red-700">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" class="w-full p-3 border border-write-300 rounded-lg" rows="6"
-                        required></textarea>
-                </div>
-                <button type="submit"
-                    class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Enviar</button>
-            </form>
-
-            <div class="text-center mt-8">
-                <p class="text-lg font-semibold text-white mb-2">Dirección:</p>
-                <p class="text-gray-300 mb-4">Calle 15 # 61 A 16, Cali, Colombia</p>
-                <p class="text-lg font-semibold text-white mb-2">Teléfono:</p>
-                <p class="text-gray-300">+57 3188003017</p>
-            </div>
-        </section>
-
-
-
-
-        <footer class="bg-blue-600 text-white py-4 mt-8">
-            <div class="container mx-auto text-center">
-                <p>&copy; 2025 Diseños Mecánicos. Todos los derechos reservados.</p>
-            </div>
-        </footer>
+            </footer>
 </body>
 
 </html>
-
