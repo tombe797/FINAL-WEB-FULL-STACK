@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoSoluciones Industriales</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <script src="app.js"></script>
+    <!-- Tailwind CSS para estilos modernos  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">TecnoSoluciones Industriales</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li>
+                        <a href="#contacto" class="hover:text-yellow-300">Contáctanos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="text-center mb-8 bg-gradient-to-r from-blue-800 to-orange-500 p-6 rounded-lg shadow-lg">
+        <div class="flex flex-col items-center md:flex-row md:justify-center md:items-center gap-6">
+            <!-- Imagen -->
+            <img src="/images/Logo tecno.png" alt="Logo industrial" class="w-96 h-48 rounded-lg shadow-lg">
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <main class="container mx-auto mt-8">
+        <!-- Asesorías y Cotizaciones -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-xl font-bold mb-4 text-center">Asesorías y Cotizaciones</h2>
+            <form id="formulario-comentarios" onsubmit="enviarFormulario(event)">
+                <div class="mb-4">
+                    <label for="nombre" class="block text-sm font-semibold text-gray-700">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" class="w-full p-2 border rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label for="comentarios" class="block text-sm font-semibold text-gray-700">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" class="w-full p-2 border rounded-md" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700">Enviar</button>
+            </form>
+            
+            <!-- Mensaje de éxito -->
+            <div id="mensaje-exito" class="hidden mt-4 bg-green-500 text-white p-4 rounded-md">
+                <p>¡Tu mensaje ha sido enviado con éxito! Nos pondremos en contacto contigo pronto.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault();  // Evita que el formulario se recargue
+
+            // Muestra el mensaje de éxito
+            const mensajeExito = document.getElementById('mensaje-exito');
+            mensajeExito.classList.remove('hidden');
+
+            // Opcionalmente, puedes ocultar el formulario o limpiar los campos
+            document.getElementById('formulario-comentarios').reset();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoSoluciones Industriales</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <script src="app.js"></script>
+
+
+    <!-- Tailwind CSS para estilos modernos  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">TecnoSoluciones Industriales</h1>
+            <nav>
+                <ul class="flex space-x-4">
+
+                    <li>
+                        <a href="#contacto" class="hover:text-yellow-300">Contáctanos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="text-center mb-8 bg-gradient-to-r from-blue-800 to-orange-500 p-6 rounded-lg shadow-lg">
+        <div class="flex flex-col items-center md:flex-row md:justify-center md:items-center gap-6">
+            <!-- Imagen -->
+            <img src="/images/Logo tecno.png" alt="Logo industrial" class="w-96 h-48 rounded-lg shadow-lg">
+
+
+        </div>
+    </section>
+
+
+    <!-- Main content -->
+    <main class="container mx-auto mt-8">
+        <!-- Bienvenida -->
+        <section class="bg-blue-100 p-6 rounded-lg shadow-md mb-8 text-center">
+            <h2 class="text-2xl font-bold mb-4">¡Bienvenidos a TecnoSoluciones Industriales!</h2>
+            <p class="text-lg text-gray-700">
+                Aquí encontrarás publicaciones y recursos sobre diseños mecánicos, ideales para estudiantes y
+                profesionales interesados en ingeniería mecánica. ¡Explora y aprende con nosotros!
+            </p>
+        </section>
+
+        <div class="flex justify-center">
+            <img src="/templates/static/Foto 2.jpg" alt="William" class="w-96 h-48 rounded-lg shadow-lg">
+        </div>
+
+        <br>
+
+        <!-- Quiénes somos -->
+        <div class="bg-orange-500 p-6 rounded-lg shadow-lg text-white">
+            <h3 class="text-lg font-semibold mb-2">Quienes somos</h3>
+            <p>Somos un equipo de profesionales apasionados por la tecnología y la innovación. Nuestra misión es crear
+                soluciones prácticas y eficientes que mejoren la vida de las personas, combinando creatividad y
+                experiencia en cada proyecto.</p>
+        </div>
+        </div>
+        </section>
+
+        <!-- Misión y Visión -->
+        <section class="bg-gray-50 p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-xl font-bold mb-4 text-center">Nuestra Misión y Visión</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                <!-- Misión -->
+                <div class="bg-blue-500 p-6 rounded-lg shadow-lg text-white">
+                    <h3 class="text-lg font-semibold mb-2">Misión</h3>
+                    <p>Proporcionar recursos de alta calidad en el ámbito de los diseños mecánicos, inspirando a
+                        estudiantes y profesionales a mejorar sus habilidades y conocimientos en ingeniería.</p>
+                </div>
+
+                <!-- Visión -->
+                <div class="bg-green-500 p-6 rounded-lg shadow-lg text-white">
+                    <h3 class="text-lg font-semibold mb-2">Visión</h3>
+                    <p>Convertirnos en un referente en la educación y divulgación de conceptos mecánicos, siendo una
+                        comunidad líder en innovación y aprendizaje continuo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 p-6 rounded-lg shadow-md mt-8">
+            <h2 class="text-2xl font-bold text-center text-red-600 mb-6">¿Qué puedes encontrar aquí?</h2>
+            <ul class="space-y-4">
+                <!-- Artículos sobre ingeniería y diseño mecánico -->
+                <li class="bg-blue-100 p-4 rounded-lg shadow-md">
+                    <div class="cursor-pointer flex items-center justify-between">
+                        <span class="text-blue-700 font-semibold" onclick="toggleContent('content1')">Artículos sobre
+                            ingeniería y diseño mecánico</span>
+                        <i class="fas fa-chevron-down text-blue-700" id="icon1"></i>
+                    </div>
+                    <div id="content1" class="hidden mt-4 text-write-900">
+                        <p>En esta sección, encontrarás artículos detallados que exploran los últimos avances en
+                            ingeniería y diseño mecánico, cubriendo desde teorías fundamentales hasta innovaciones en la
+                            industria.</p>
+                    </div>
+                </li>
+
+                <!-- Recursos descargables para proyectos -->
+                <li class="bg-green-100 p-4 rounded-lg shadow-md">
+                    <div class="cursor-pointer flex items-center justify-between">
+                        <span class="text-green-700 font-semibold" onclick="toggleContent('content2')">Recursos
+                            descargables para proyectos</span>
+                        <i class="fas fa-chevron-down text-green-700" id="icon2"></i>
+                    </div>
+                    <div id="content2" class="hidden mt-4 text-write-900">
+                        <p>Aquí puedes encontrar plantillas, guías, y software útil para tus proyectos de ingeniería.
+                            Todo el contenido está diseñado para facilitar la implementación de tus ideas de manera
+                            eficiente.</p>
+                    </div>
+                </li>
+
+                <!-- Consejos para estudiantes y principiantes -->
+                <li class="bg-yellow-100 p-4 rounded-lg shadow-md">
+                    <div class="cursor-pointer flex items-center justify-between">
+                        <span class="text-yellow-700 font-semibold" onclick="toggleContent('content3')">Consejos para
+                            estudiantes y principiantes</span>
+                        <i class="fas fa-chevron-down text-yellow-700" id="icon3"></i>
+                    </div>
+                    <div id="content3" class="hidden mt-4 text-write-900">
+                        <p>Si estás comenzando en el campo de la ingeniería, esta sección es para ti. Aquí encontrarás
+                            consejos prácticos y recursos que te ayudarán a desarrollar tus habilidades y a comprender
+                            mejor los conceptos fundamentales.</p>
+                    </div>
+                </li>
+
+                <!-- Un espacio para compartir ideas y aprendizaje -->
+                <li class="bg-purple-100 p-4 rounded-lg shadow-md">
+                    <div class="cursor-pointer flex items-center justify-between">
+                        <span class="text-purple-700 font-semibold" onclick="toggleContent('content4')">Un espacio para
+                            compartir ideas y aprendizaje</span>
+                        <i class="fas fa-chevron-down text-purple-700" id="icon4"></i>
+                    </div>
+                    <div id="content4" class="hidden mt-4 text-write-00">
+                        <p>Este es un foro abierto para todos los entusiastas de la ingeniería. Aquí puedes compartir
+                            tus ideas, preguntar dudas, o colaborar en proyectos con otros miembros de la comunidad.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <script>
+            function toggleContent(contentId) {
+                const content = document.getElementById(contentId);
+                const icon = document.getElementById('icon' + contentId.charAt(contentId.length - 1));
+
+                content.classList.toggle('hidden');
+
+                if (content.classList.contains('hidden')) {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            }
+        </script>
+
+
+        <!-- Necesidades en la Industria -->
+        <section class="bg-blue-200 p-6 rounded-lg shadow-md mt-8">
+            <h2 class="text-2xl font-bold text-center text-red-600 mb-4">Necesidades en la Industria</h2>
+            <p class="text-whire-700 text-justify mb-6">
+                En el ámbito del diseño industrial, la creación de prototipos y soluciones efectivas para la industria
+                requiere herramientas avanzadas y precisas. Software como <strong>Autodesk Inventor</strong> y
+                <strong>SolidWorks</strong> se han convertido en pilares fundamentales, permitiendo a los ingenieros y
+                diseñadores modelar componentes complejos, simular su funcionamiento en entornos reales y optimizar
+                diseños para garantizar su viabilidad. Estas plataformas son esenciales para agilizar los procesos de
+                manufactura, reducir costos y aumentar la precisión en el desarrollo de productos, cumpliendo con los
+                estándares exigidos por la industria moderna.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="/images/imagen1.jpeg" alt="Descripción 1" class="w-full h-auto rounded-lg shadow-md">
+                <img src="/images/imagen2.jpeg" alt="Descripción 2" class="w-full h-auto rounded-lg shadow-md">
+                <img src="/images/imagen3.jpeg" alt="Descripción 3" class="w-full h-auto rounded-lg shadow-md">
+                <img src="/images/imagen4.jpg" alt="Descripción 4" class="w-full h-auto rounded-lg shadow-md">
+                <img src="/images/imagen5.jpeg" alt="Descripción 5" class="w-full h-auto rounded-lg shadow-md">
+                <img src="/images/imagen7.png" alt="Descripción 5" class="w-full h-auto rounded-lg shadow-md">
+            </div>
+        </section>
+
+        <!-- Cumplimiento de Normas Internacionales y Diseño Industrial -->
+        <section class="bg-gray-200 p-6 rounded-lg shadow-md mt-8">
+            <h2 class="text-2xl font-bold text-center text-red-600 mb-4">Cumplimiento de Normas Internacionales y Diseño
+                Industrial</h2>
+            <p class="text-gray-700 text-justify mb-6">
+                En TecnoSoluciones Industriales, entendemos la importancia de cumplir con las normas internacionales
+                para garantizar la calidad y seguridad de nuestros proyectos. Utilizamos metodologías de diseño que
+                cumplen con estándares como <strong>ISO 9001</strong>, <strong>ASME</strong> y <strong>ANSI</strong>,
+                asegurando que cada producto o solución entregue valor a nuestros clientes y esté en línea con las
+                exigencias del mercado global.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-2">Norma ISO 9001</h3>
+                    <p class="text-gray-600">Garantiza la gestión de calidad en cada etapa del diseño y producción,
+                        asegurando la satisfacción del cliente.</p>
+                    <a href="/docs/iso_9001_2008.pdf" target="_blank" class="text-blue-500 hover:underline mt-2 block">
+                        Leer/Descargar PDF
+                    </a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-2">Normas ASME</h3>
+                    <p class="text-gray-600">Son esenciales para diseños de equipos a presión, asegurando resistencia y
+                        seguridad en su funcionamiento.</p>
+                    <a href="/docs/Normas ASME.pdf" target="_blank" class="text-blue-500 hover:underline mt-2 block">
+                        Leer/Descargar PDF
+                    </a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-2">Normas ANSI</h3>
+                    <p class="text-gray-600">Establecen estándares para componentes mecánicos y eléctricos,
+                        garantizando compatibilidad y calidad.</p>
+                    <a href="/docs/Sistemas de gestión empresarial - Norma ANSI.pdf" target="_blank"
+                        class="text-blue-500 hover:underline mt-2 block">
+                        Leer/Descargar PDF
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+
+            <nav>
+                <ul class="flex space-x-4">
+                    <li>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Main content -->
+    <main class="container mx-auto mt-8">
+
+        <!-- Asesorías y Cotizaciones -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-xl font-bold mb-4 text-center">Asesorías y Cotizaciones</h2>
+            <form id="formulario-comentarios" onsubmit="enviarFormulario(event)">
+                <div class="mb-4">
+                    <label for="nombre" class="block text-sm font-semibold text-gray-700">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" class="w-full p-2 border rounded-md" required>
+                </div>
+                <div class="mb-4">
+                    <label for="comentarios" class="block text-sm font-semibold text-gray-700">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" class="w-full p-2 border rounded-md"
+                        required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700">Enviar</button>
+            </form>
+
+
+            <!-- Mensaje de éxito -->
+            <div id="mensaje-exito" class="hidden mt-4 bg-green-500 text-white p-4 rounded-md">
+                <p>¡Tu mensaje ha sido enviado con éxito! Nos pondremos en contacto contigo pronto.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault();  // Evita que el formulario se recargue
+
+            // Muestra el mensaje de éxito
+            const mensajeExito = document.getElementById('mensaje-exito');
+            mensajeExito.classList.remove('hidden');
+
+            // Opcionalmente, puedes ocultar el formulario o limpiar los campos
+            document.getElementById('formulario-comentarios').reset();
+        }
+    </script>
+
+    <!-- Frase Inspiradora -->
+    <section class="bg-gray-1 p-6 rounded-lg shadow-md text-center mt-8">
+        <blockquote class="italic font-bold text-2xl text-gray-">
+            "El diseño no solo es cómo se ve, sino cómo funciona." - Steve Jobs
+        </blockquote>
+    </section>
+
+    <!-- contatanos -->
+    <section id="contacto" class="bg-black p-6 rounded-lg shadow-md mt-8">
+        <h2 class="text-xl font-bold mb-4 text-center text-white">Escribanos un email</h2>
+
+
+
+        <form action="https://formspree.io/f/xkgogdqj" method="POST" class="contact-form">
+            <div class="mb-4">
+                <label for="nombre" class="block text-sm font-semibold">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="w-full p-3 border border-gray-300 rounded-lg"
+                    required>
+            </div>
+            <div class="mb-4">
+                <label for="correo" class="block text-sm font-semibold">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" class="w-full p-3 border border-gray-300 rounded-lg"
+                    required>
+            </div>
+            <div class="mb-4">
+                <label for="mensaje" class="block text-sm font-semibold">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" class="w-full p-3 border border-gray-300 rounded-lg" rows="6"
+                    required></textarea>
+            </div>
+            <button type="submit"
+                class="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">Enviar</button>
+        </form>
+        <br>
+
+        <style>
+            .contact-info {
+                text-align: center;
+                /* Centra el texto horizontalmente */
+                color: white;
+                /* Establece el color blanco para todo el texto */
+                padding: 40px;
+                /* Espaciado alrededor del contenido */
+            }
+        </style>
+
+        <div class="contact-info">
+            <p class="text-sm font-semibold">Dirección de la oficina:</p>
+            <p>Calle 15 # 61 A 26, Cali, Colombia</p>
+            <p class="text-sm font-semibold">Teléfono de la oficina:</p>
+            <p>+57 318 880 3017</p>
+        </div>
+
+
+
+
+        <h2 class="text-xl font-bold mb-4 text-center text-white">Síguenos en nuestras redes sociales</h2>
+
+        <div class="flex justify-center space-x-6 mb-6">
+            <!-- Redes sociales -->
+            <a href="https://www.facebook.com/share/1B4RtARMYo/?mibextid=qi2Omg" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                    alt="Facebook" class="w-10 h-10 hover:opacity-75 transition">
+            </a>
+            <a href="https://www.instagram.com/william_tombe797?igsh=bGxzZTF4MDJkY2d0" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram"
+                    class="w-10 h-10 hover:opacity-75 transition">
+            </a>
+            <a href="https://wa.me/573188003017" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+                    class="w-10 h-10 hover:opacity-75 transition">
+            </a>
+        </div>
+
+
+           <!-- Continuación del contenido -->
+
+    <footer class="bg-blue-600 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 TecnoSoluciones Industriales. Todos los derechos reservados.</p>
+            <p><a href="mailto:contacto@tecnosolucionesindustriales.com" class="hover:text-yellow-300">Contáctanos</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para toggle de contenido
+        function toggleContent(contentId) {
+            const content = document.getElementById(contentId);
+            const icon = document.getElementById('icon' + contentId.charAt(contentId.length - 1));
+
+            content.classList.toggle('hidden');
+
+            if (content.classList.contains('hidden')) {
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+</body>
+
+</html>
